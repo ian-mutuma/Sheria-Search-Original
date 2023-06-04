@@ -454,6 +454,7 @@ input:focus{
     gap:10px;
     position: absolute;
     align-items: center;
+    background-color: none;
     /* justify-content: flex-start; */
   }
 
