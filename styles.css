@@ -4,7 +4,10 @@
 body{
   font-size: 16px;
   font-family: Viga, Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom right, rgb(186, 247, 255), rgb(215, 255, 213), lightblue);
+  background: linear-gradient(to bottom right, rgb(227, 252, 255), rgb(204, 199, 245), rgb(231, 249, 255));
+  /* background-image: url("images/ai-law.webp");
+  background-repeat: no-repeat;
+  background-size:contain; */
   padding: 0px 30px;
   overflow: auto;
 }
@@ -33,16 +36,19 @@ a:hover{
 /* *********************HEADER************************************************ */
 .header{
   display : flex;
-  height: auto;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  /* margin-bottom: 50px; */
   font-size : 10px;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0px;
+  /* position: fixed; */
+  /* top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 1;
-  background: linear-gradient(to bottom right, rgb(186, 247, 255), rgb(215, 255, 213), lightblue);
+  z-index: 1; */
+  /* background: linear-gradient(to bottom right, rgb(186, 247, 255), rgb(215, 255, 213), lightblue); */
+  /* backdrop-filter: blur(100px); */
   cursor: pointer;
 
  
@@ -51,10 +57,10 @@ a:hover{
 
 .left-header{
 
-  display: flex;
-  align-items: center;
-  min-width: 330px;
-  font-size: 39px;
+  /* display: flex; */
+  text-align: center;
+  min-width: 100%;
+  font-size: 50px;
   flex: 0 0;
   z-index: 1;
 }
@@ -109,7 +115,7 @@ a:hover{
 
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .search-bar-container{
@@ -117,8 +123,8 @@ a:hover{
   display: flex;
   align-items:center;
   background-color:transparent;
-  border: 4px solid  rgb(23, 63, 29);
-  border-radius: 0px 20px;
+  border: 2px solid rgb(23, 63, 29);
+  border-radius: 8px;
   padding: 20px;
 }
 
@@ -301,7 +307,7 @@ input:focus{
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-top: 30px;
+  margin: 60px 0px;
   
 }
 
@@ -362,6 +368,7 @@ input:focus{
   padding: 10px 30px;
   border-radius: 10px 0px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .free-button:hover,
@@ -445,16 +452,16 @@ input:focus{
 }
 }
 
-/* ******************media queries 800PX************************** */
+/* ******************media queries 865PX************************** */
 
-@media (max-width: 800px){
+@media (max-width: 865px){
  
   .header{
     flex-direction: column;
     gap:10px;
-    position: absolute;
-    align-items: center;
-    background-color: transparent;
+    /* position: absolute; */
+    align-items: baseline;
+    /* background-color: transparent; */
     /* justify-content: flex-start; */
   }
 
@@ -464,7 +471,7 @@ input:focus{
   }
 
   .first-section{
-    margin-top: 160px;
+    margin-top: 30px;
   }
   .search-bar-container{
     
